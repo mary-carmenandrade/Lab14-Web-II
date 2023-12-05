@@ -1,0 +1,183 @@
+.background::before {
+  content: "";
+  background: url(https://raw.githubusercontent.com/JeetSaru/Responsive-HTML-Table-With-Pure-CSS---Web-Design-UI-Design/main/images/html_table.jpg);
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  
+}
+
+.background{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.titulo {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 3em;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #ffcc00, #ff00cc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+
+
+
+.filtros{
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  width: 100%;
+  margin-bottom: 20px;
+}
+.filter-controls{
+  margin-right: 10px;
+}
+
+
+.container {
+  width: 80%;
+  padding: 20px;
+  background-color: rgba(253, 252, 252, 0.418); /* Fondo de la tabla con transparencia */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: auto; /* Para el caso de contenido largo en la tabla */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Resto de estilos para la tabla */
+table {
+  width: 80%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #010103;
+  
+}
+
+th {
+  background-color: #1f1e7e;
+  font-weight: bold;
+  color: #f7f6f6;
+}
+
+tr:nth-child(even) {
+  background-color: #819de9;
+}
+
+tr:hover {
+  background-color: #5958c2;
+}
+
+
+
+/* Estilos para los controles de filtro */
+select, input[type="text"] {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px; 
+  justify-content: flex-start;
+}
+
+.pdf-button {
+  background: #db3434;
+  color: #fff;
+  text-decoration: none;
+}
+
+.xml-button {
+  background: #27ae60; /* Color para Excel */
+  color: #fff;
+  text-decoration: none;
+}
+
+.csv-button {
+  background: #f39c12; /* Color para CSV */
+  color: #fff;
+  text-decoration: none;
+  
+}
+.json-button{
+  background: #9933cc; /* Morado */
+    color: #fff;
+    text-decoration: none;
+}
+
+.filtros {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(87, 115, 175);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgb(0, 0, 0);
+  margin-bottom: 20px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 20px; /* Espacio entre filtros */
+}
+
+.filter-label {
+  font-weight: bold;
+  margin-bottom: 5px; /* Espacio entre el label y el input */
+  color: black;
+}
+
+.filter-select,
+.filter-input {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.filter-button {
+  padding: 8px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #a81f9d;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.filter-button:hover {
+  background-color: #2980b9;
+}

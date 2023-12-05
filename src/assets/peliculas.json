@@ -1,0 +1,52 @@
+[
+  {
+    "titulo": "The Midnight Adventure",
+    "genero": "Aventura",
+    "lanzamiento": 2019
+  },
+  {
+    "titulo": "Love in Paris",
+    "genero": "Romance",
+    "lanzamiento": 2020
+  },
+  {
+    "titulo": "Galactic Wars",
+    "genero": "Ciencia ficción",
+    "lanzamiento": 2021
+  },
+  {
+    "titulo": "The Secret Garden",
+    "genero": "Fantasía",
+    "lanzamiento": 2020
+  },
+  {
+    "titulo": "The Comedy Club",
+    "genero": "Comedia",
+    "lanzamiento": 2018
+  },
+  {
+    "titulo": "Haunted House",
+    "genero": "Terror",
+    "lanzamiento": 2022
+  },
+  {
+    "titulo": "Underwater Odyssey",
+    "genero": "Aventura",
+    "lanzamiento": 2017
+  },
+  {
+    "titulo": "The Time Traveler",
+    "genero": "Ciencia ficción",
+    "lanzamiento": 2023
+  },
+  {
+    "titulo": "The Grand Heist",
+    "genero": "Acción",
+    "lanzamiento": 2021
+  },
+  {
+    "titulo": "Music of the Heart",
+    "genero": "Drama",
+    "lanzamiento": 2019
+  }
+]

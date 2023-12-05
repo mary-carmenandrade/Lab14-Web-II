@@ -1,0 +1,49 @@
+<div class="background">
+  <div class="container">
+    <h1 class="title">Reporte de Películas</h1>
+    <table>
+      <tr>
+        <th>Título</th>
+        <th>Género</th>
+        <th>Año de lanzamiento</th>
+      </tr>
+      <tr *ngFor="let pelicula of peliculas">
+        <td>{{ pelicula.titulo }}</td>
+        <td>{{ pelicula.genero }}</td>
+        <td>{{ pelicula.lanzamiento }}</td>
+      </tr>
+      
+    </table>
+    <br>
+    <div class="button-container">
+      <button (click)="generarPDF()" class="pdf-button" type="button">Generar PDF</button>
+      <button (click)="generarXML()" class="xml-button" type="button">Generar XML</button>
+      <button (click)="generarCSV()" class="csv-button" type="button">Generar CSV</button>
+      <button (click)="generarJSON()" class="json-button" type="button">Generar JSON</button>
+    </div>
+    <br>
+
+    <!-- Agrega controles de filtro -->
+    <div class="filtros">
+      <div class="filter-group">
+        <label for="filtroNombre" class="filter-label">Filtrar por nombre:</label>
+        <input type="text" id="filtroNombre" [(ngModel)]="filtroNombre" class="filter-input" />
+      </div>
+
+      <div class="filter-group">
+        <label for="filtroGenero" class="filter-label">Filtrar por género:</label>
+        <select id="filtroGenero" [(ngModel)]="filtroGenero" class="filter-select">
+          <option value="Todos">Todos</option>
+          <option *ngFor="let genero of generos" [value]="genero">{{ genero }}</option>
+        </select>
+      </div>
+    
+      <div class="filter-group">
+        <label for="filtroLanzamiento" class="filter-label">Filtrar por año de lanzamiento:</label>
+        <input type="text" id="filtroLanzamiento" [(ngModel)]="filtroLanzamiento" class="filter-input" />
+      </div>
+    
+      <button (click)="aplicarFiltros()" class="filter-button">Aplicar Filtros</button>
+    </div>
+  </div>
+</div>
